@@ -1,0 +1,61 @@
+aside {
+  .panel-pane,
+  .panel-pane.collapsed {
+    h2:hover {
+      color: #fff;
+    }
+  }
+  .panel-pane {
+    margin-bottom: 20px;
+
+    h2 {
+      background: $color-background-dark;
+      color: #fff;
+      margin-bottom: 0;
+      margin-top: 0;
+      padding: 7px 15px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      @include transition-duration(0.3s);
+
+    }
+  }
+  .panel-pane.collapsed {
+    h2 {
+      position: relative;
+      cursor: pointer;
+      color: $color-text-title;
+
+      &:after {
+        background-image: url(../images/icon-collapse.png);
+        background-position: 0 0;
+        width: 16px;
+        height: 16px;
+        content: "";
+        position: absolute;
+        top: 9px;
+        right: 15px;
+      }
+      &.expanded{
+        color: #fff;
+
+        &:after {
+          background-position: 0 16px;
+        }
+      }
+    }
+  }
+}
+
+.no-bg {
+  background: none;
+
+  .pane-content{
+    padding: 0;
+  }
+}
+
+.link-field-column input {
+  display: inline-block;
+}

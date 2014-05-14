@@ -1,0 +1,26 @@
+<?php
+/**
+ * Install tasks
+ *
+ */
+
+/**
+ * Implements hook_install().
+ */
+function matrisen_install() {
+  // We use ember as our admin theme.
+  theme_enable(array('ember'));
+  $variables = array(
+    'admin_theme' => 'ember',
+    'node_admin_theme' => 1,
+    'theme_default' => 'enginzyme',
+    'site_name' => 'Enginzyme',
+  );
+  foreach ($variables as $key => $variable) {
+    variable_set($key, $variable);
+  }
+
+  // Don't have update module enabled.
+  module_disable(array('update'));
+  theme_disable(array('bartik'));
+}

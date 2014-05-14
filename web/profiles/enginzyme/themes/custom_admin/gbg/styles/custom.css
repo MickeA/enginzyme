@@ -1,0 +1,150 @@
+/* 
+   Optimal text line length for legibility is 65-75 characters. 
+   I add an extra 10 to compensate for the fact that ex 
+   (the height of the lower case "x", usually equal to it's width 
+   and therefor an average character) is narrower than the width of 
+   an uppercase letter and any given line will contain a few of them.
+   Apply in the style.scss file using "max-width" 
+*/
+.form-actions {
+  clear: left;
+}
+
+ul.primary li {
+  display: inline;
+}
+
+.select2-container {
+  background: none;
+  padding-right: 0;
+}
+
+.glenn .main-primary {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  #margin-left: -15px;
+  display: inline;
+}
+@media (min-width: 900px) {
+  .glenn .main-primary {
+    padding-right: 15px;
+    width: 55.72458%;
+    float: left;
+    margin-right: 1.20096%;
+  }
+}
+@media (min-width: 1100px) {
+  .glenn .main-primary {
+    width: 68.3747%;
+    float: left;
+    margin-right: 1.20096%;
+  }
+}
+.glenn aside {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  #margin-left: -15px;
+  display: inline;
+}
+@media (min-width: 900px) {
+  .glenn aside {
+    width: 43.07446%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 1100px) {
+  .glenn aside {
+    width: 30.42434%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+#media-browser-tabset #branding h1 {
+  height: auto;
+  font-size: 2em;
+}
+
+#mediaStyleSelector {
+  min-height: 240px !important;
+  /*Override media js styling*/
+}
+
+aside .panel-pane h2:hover,
+aside .panel-pane.collapsed h2:hover {
+  color: #fff;
+}
+aside .panel-pane {
+  margin-bottom: 20px;
+}
+aside .panel-pane h2 {
+  background: #303030;
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 7px 15px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+aside .panel-pane.collapsed h2 {
+  position: relative;
+  cursor: pointer;
+  color: #cccccc;
+}
+aside .panel-pane.collapsed h2:after {
+  background-image: url(../images/icon-collapse.png);
+  background-position: 0 0;
+  width: 16px;
+  height: 16px;
+  content: "";
+  position: absolute;
+  top: 9px;
+  right: 15px;
+}
+aside .panel-pane.collapsed h2.expanded {
+  color: #fff;
+}
+aside .panel-pane.collapsed h2.expanded:after {
+  background-position: 0 16px;
+}
+
+.no-bg {
+  background: none;
+}
+.no-bg .pane-content {
+  padding: 0;
+}
+
+.link-field-column input {
+  display: inline-block;
+}
+
+div.ctools-modal-content .modal-header {
+  background-color: #303030;
+  padding: 5px 10px;
+}
+
+div.ctools-modal-content a.close img {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+div.ctools-modal-content .form-item label {
+  float: none;
+  width: inherit;
+}
+
+div.ctools-modal-content .resizable-textarea {
+  margin-left: 0;
+}

@@ -1,0 +1,10 @@
+// more media fixes is found at:
+// _baseline.scss, row 472,473,484,485
+
+#media-browser-tabset #branding h1 {
+  height: auto;
+  font-size: 2em;
+}
+#mediaStyleSelector {
+  min-height: 240px !important; /*Override media js styling*/
+}

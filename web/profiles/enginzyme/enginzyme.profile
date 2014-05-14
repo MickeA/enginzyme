@@ -1,0 +1,6 @@
+<?php
+
+/**
+ * Profile code stuff.
+ *
+ */

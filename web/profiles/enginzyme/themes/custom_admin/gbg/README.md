@@ -1,0 +1,1 @@
+GBG - Administration theme

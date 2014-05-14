@@ -1,0 +1,17 @@
+// header
+div.ctools-modal-content .modal-header {
+	background-color: #303030;
+	padding: 5px 10px;
+}
+div.ctools-modal-content a.close img {
+	margin: 0 5px;
+	display: inline-block;
+}
+// content
+div.ctools-modal-content .form-item label {
+	float: none;
+	width: inherit;
+}
+div.ctools-modal-content .resizable-textarea {
+	margin-left: 0;
+}

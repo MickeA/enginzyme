@@ -1,0 +1,26 @@
+#!/bin/bash
+
+if [ "$DRUSH" == "" ]; then
+  DRUSH="drush"
+fi
+
+echo ":: Building Enginzyme"
+
+if [ -d web ]; then
+  echo ":: Removing web folder"
+  chmod -R 777  web
+  rm -rf web
+fi
+
+echo ":: Checking out web folder from repo"
+git checkout web
+
+echo ":: Moving to web folder"
+cd web;
+
+echo ":: Run the profile"
+$DRUSH -y make --working-copy --no-gitinfofile --contrib-destination=profiles/enginzyme/ profiles/enginzyme/enginzyme.make
+
+cd ..
+
+echo ":: All enginzyme built, baby!"

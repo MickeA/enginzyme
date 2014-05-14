@@ -1,0 +1,39 @@
+//-----------------------------------------
+// two-col
+//-----------------------------------------
+.glenn {
+  .main-primary {
+    @include box-sizing(border-box);
+    @include span-columns(16 omega,16);
+
+    // @include at-breakpoint($small) {
+    //   @include span-columns(9,16);
+    // }
+    // @include at-breakpoint($medium) {
+    //   @include span-columns(9,16);
+    // }
+    @include at-breakpoint($large) {
+      padding-right: 15px;
+      @include span-columns(9,16);
+    }
+    @include at-breakpoint($extraLarge) {
+      @include span-columns(11,16);
+    }
+  }
+  aside {
+    @include span-columns(16 omega,16);
+
+    // @include at-breakpoint($small) {
+    //   @include span-columns(7 omega,16);
+    // }
+    // @include at-breakpoint($medium) {
+    //   @include span-columns(7 omega,16);
+    // }
+    @include at-breakpoint($large) {
+      @include span-columns(7 omega,16);
+    }
+    @include at-breakpoint($extraLarge) {
+      @include span-columns(5 omega,16);
+    }
+  }
+}

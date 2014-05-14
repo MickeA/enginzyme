@@ -1,0 +1,13 @@
+.form-actions {
+	clear: left;
+}
+
+// system.menu.css doesnt load correctly after clearing cache..
+ul.primary li {
+	display: inline;
+}
+
+.select2-container {
+	background: none;
+	padding-right: 0;
+}
